@@ -32,7 +32,6 @@ class ObjectEditingViewController: UIViewController {
         configureAlert()
     }
 
-    
     private func configureAlert() {
         
         let alert = UIAlertController(title: "Attention!",
@@ -44,7 +43,7 @@ class ObjectEditingViewController: UIViewController {
         
         let addButton = UIAlertAction(title: "Add attribute key!", style: .default) { (_) in
             let inputKey = alert.textFields![0].text ?? ""
-            // второй alert
+            // second alert
             
             let alert = UIAlertController(title: "Attention!",
                                           message: "Please enter value for \(inputKey):",

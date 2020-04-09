@@ -48,20 +48,41 @@ class StorageImpl: Storage {
     func addObjectToStorage(objectAttributes: [ObjectAttribute]) {
         storageObjects.append(StorageObject(attributes: objectAttributes))
         
+        writeDataToTxtFile()
         outputForObjectListModel?.collectionChanged(newValue: storageObjects)
     }
     
     func deleteObjectFromStorage(at index: Int) {
         storageObjects.remove(at: index)
         
+        writeDataToTxtFile()
         outputForObjectListModel?.collectionChanged(newValue: storageObjects)
     }
 
     func changeObjectAttributesInStrorage(objectIndex: Int, newAttributes: [ObjectAttribute]) {
         storageObjects[objectIndex] = StorageObject(attributes: newAttributes)
         
+        writeDataToTxtFile()
         outputForObjectListModel?.collectionChanged(newValue: storageObjects)
         outputForObjectEditingModel?.collectionChanged(newValue: storageObjects)
         outputForObjectsReviewModel?.collectionChanged(newValue: storageObjects)
+    }
+    
+    private func writeDataToTxtFile() {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let filename = paths[0].appendingPathComponent("objectsInformation.txt")
+        var str = ""
+        
+        for object in storageObjects{
+            for attribute in object.attributes {
+                str += "\(attribute.attributeKey) - \(attribute.attributeValue)\n"
+                do {
+                    try str.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
+                } catch {
+                    print("error")
+                }
+            }
+            str += "\n"
+        }
     }
 }

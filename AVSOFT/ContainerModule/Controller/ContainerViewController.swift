@@ -57,7 +57,7 @@ class ContainerViewController: UIViewController {
             view.insertSubview(menuViewController.view, at: 0)
             addChild(menuViewController)
             menuViewController.didMove(toParent: self)
-            print("Добавили menuViewController ")
+            print("add menuViewController ")
         }
     }
     
@@ -89,7 +89,7 @@ class ContainerViewController: UIViewController {
                 self.didSelectMenuOption(menuOption: menuOption)
             }
         }
-//        animateStatusBar()    // check!
+//        animateStatusBar()    
     }
     
     func didSelectMenuOption(menuOption: MenuOption) {
@@ -109,7 +109,7 @@ class ContainerViewController: UIViewController {
         }
     }
     
-    func animateStatusBar() {
+    private func animateStatusBar() {
         UIView.animate(withDuration: 0.5,
                        delay: 0,
                        usingSpringWithDamping: 0.8,
@@ -121,7 +121,6 @@ class ContainerViewController: UIViewController {
     }
     
 }
-
 
 extension ContainerViewController: HomeViewControllerDelegate {
     func toggleMenu(forMenuOption menuOption: MenuOption?) {

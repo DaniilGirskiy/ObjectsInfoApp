@@ -85,25 +85,21 @@ class ObjectCreationViewController: UIViewController {
         
         tableView.separatorStyle = .none
         tableView.backgroundColor = .clear
-        
     }
 }
 
-
-
-
 extension ObjectCreationViewController: UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return model.objectAttributes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! ObjectCreationViewCell
+        cell.selectionStyle = .none
         
         let key = model.objectAttributes[indexPath.row].attributeKey
         cell.attributeLabel.text = key
-        cell.inputTextField.tag = indexPath.row  // через замыкание
+        cell.inputTextField.tag = indexPath.row  // try closure!
         cell.inputTextField.delegate = self
         
         return cell
@@ -111,18 +107,23 @@ extension ObjectCreationViewController: UITableViewDelegate, UITableViewDataSour
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-//        textField.becomeFirstResponder()
         return true
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        print(textField.tag)
-        
+    // last textField didn't save without return
+    
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+////        print(textField.tag)
+//
+//        model.objectAttributes[textField.tag] = ObjectAttribute(attributeKey: model.objectAttributes[textField.tag].attributeKey,
+//                                                                attributeValue: textField.text!)
+//    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
         model.objectAttributes[textField.tag] = ObjectAttribute(attributeKey: model.objectAttributes[textField.tag].attributeKey,
                                                                 attributeValue: textField.text!)
     }
 }
-
 
 extension ObjectCreationViewController: ObjectCreationModelOutput {
     func updateViewFromModel() {

@@ -14,7 +14,6 @@ protocol ObjectsReviewModel {
     var objects: [PresentationObjectInformation] { get set }
     
     func load()
-    
 }
 
 protocol ObjectsReviewModelOutput {

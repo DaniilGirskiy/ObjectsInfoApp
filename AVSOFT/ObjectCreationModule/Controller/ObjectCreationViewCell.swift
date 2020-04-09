@@ -12,13 +12,12 @@ class ObjectCreationViewCell: UITableViewCell {
     @IBOutlet weak var attributeLabel: UILabel!
     @IBOutlet weak var inputTextField: UITextField!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
         backgroundColor = .clear
-        inputTextField.backgroundColor = .lightGray
+        inputTextField.backgroundColor = .clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,5 +27,7 @@ class ObjectCreationViewCell: UITableViewCell {
     }
 
 }
+
+
 
 

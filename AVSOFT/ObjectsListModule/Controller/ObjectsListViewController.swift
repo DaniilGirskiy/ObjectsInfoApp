@@ -67,9 +67,6 @@ class ObjectsListViewController: UIViewController {
 
 }
 
-
-
-
 extension ObjectsListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -80,7 +77,7 @@ extension ObjectsListViewController: UITableViewDelegate, UITableViewDataSource 
     
     func editAction(at indexPath: IndexPath) -> UIContextualAction {
         let action = UIContextualAction(style: .normal, title: "Edit") { (action, view, completion) in
-            self.router.show(in: self)
+            self.router.show(in: self, with: indexPath.row)
             completion(true)
         }
         return action
@@ -108,17 +105,11 @@ extension ObjectsListViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-//        print(model.presentationObjects[indexPath.row].fullName)
         
         router.show(in: self, with: indexPath.row)
-        
     }
     
 }
-
-
-
-
 
 extension ObjectsListViewController: ObjectsListModelOutput {
     func updateViewFromModel() {

@@ -23,15 +23,15 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZWh-KE-11R">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lke-aK-QU3" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lke-aK-QU3" userLabel="Top View" customClass="TopView" customModule="AVSOFT" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="edO-XS-ei8"/>
+                                            <constraint firstAttribute="height" constant="180" id="edO-XS-ei8"/>
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="W7T-sY-CRu">
-                                        <rect key="frame" x="0.0" y="308" width="414" height="269.5"/>
+                                        <rect key="frame" x="0.0" y="188" width="414" height="269.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01Q-0m-XLE">
                                                 <rect key="frame" x="16" y="8" width="382" height="33.5"/>
@@ -53,7 +53,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HNV-r3-hFh">
                                                         <rect key="frame" x="0.0" y="66" width="382" height="50"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                 </subviews>
                                             </stackView>
@@ -74,23 +74,23 @@
                                         <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NlG-93-HZZ">
-                                        <rect key="frame" x="0.0" y="585.5" width="414" height="204"/>
+                                        <rect key="frame" x="0.0" y="465.5" width="414" height="314.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aMW-mO-JVe">
-                                        <rect key="frame" x="0.0" y="797.5" width="414" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="788" width="414" height="30"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="p6h-ay-kaK">
-                                                <rect key="frame" x="87.5" y="0.0" width="239" height="20.5"/>
+                                                <rect key="frame" x="87.5" y="0.0" width="239" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lle-ee-LY1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2V-CD-ug3">
-                                                        <rect key="frame" x="187" y="0.0" width="52" height="20.5"/>
+                                                        <rect key="frame" x="187" y="0.0" width="52" height="30"/>
                                                         <state key="normal" title="Sign up">
                                                             <color key="titleColor" red="1" green="0.53090317880000004" blue="0.25181113449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
@@ -113,7 +113,7 @@
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="HNV-r3-hFh" id="tpo-Ps-GYe"/>
-                        <outlet property="topView" destination="lke-aK-QU3" id="lX7-TI-fTk"/>
+                        <outlet property="topView" destination="lke-aK-QU3" id="OSp-Ot-iOx"/>
                         <outlet property="usernameTextField" destination="I1B-MP-xfW" id="gJH-5z-6Cx"/>
                     </connections>
                 </viewController>
@@ -187,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ir5-UR-xuu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3469.5652173913045" y="129.91071428571428"/>
+            <point key="canvasLocation" x="3446" y="130"/>
         </scene>
         <!--Object Editing View Controller-->
         <scene sceneID="fNz-Gp-QBT">

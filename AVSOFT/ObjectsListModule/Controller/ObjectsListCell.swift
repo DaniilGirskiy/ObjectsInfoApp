@@ -42,7 +42,6 @@ class ObjectsListCell: UITableViewCell {
         fullNameLabel.font = .systemFont(ofSize: 30)
         fullNameLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         fullNameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
-        
     }
     
 }
