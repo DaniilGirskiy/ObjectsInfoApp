@@ -19,12 +19,22 @@ class LoginRouterAssembly {
 
 protocol LoginRouter {
     func show(in vc: UIViewController)
+    func showSignUpModule(in vc: UIViewController)
 }
 
 class LoginRouterImpl: LoginRouter {
     private lazy var containerViewControllerAssembly = ContainerViewControllerAssembly()
+    private lazy var signUpViewControllerAssembly = SignUpViewControllerAssembly()
     
     func show(in vc: UIViewController) {
         vc.present(containerViewControllerAssembly.viewController, animated: true, completion: nil)
     }
+    
+    func showSignUpModule(in vc: UIViewController) { // в ассембли
+        
+        
+        vc.present(signUpViewControllerAssembly.controller, animated: true, completion: nil)
+    
+    }
+    
 }

@@ -35,6 +35,11 @@ class TopView: UIView {
         shapeLayer.add(basicAnimation, forKey: "urSoBasic")
     }
     
+    func reset() {
+        shapeLayer.removeAllAnimations()
+//        shapeLayer.fillColor = UIColor.red.cgColor
+    }
+    
     // MARK: - Setup
     
     private func configureLayer() {

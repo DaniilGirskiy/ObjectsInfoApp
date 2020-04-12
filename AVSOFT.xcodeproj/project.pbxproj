@@ -46,8 +46,15 @@
 		527A5E312406DEEC004AB058 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A5E302406DEEC004AB058 /* HomeViewController.swift */; };
 		527A5E332406DFAB004AB058 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A5E322406DFAB004AB058 /* ContainerViewController.swift */; };
 		527A5E352406DFC5004AB058 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A5E342406DFC5004AB058 /* MenuViewController.swift */; };
+		527B1DFE24422E5F00EB3BEF /* AttributeAddingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B1DFD24422E5F00EB3BEF /* AttributeAddingViewCell.swift */; };
 		52CF2A32241FBCAF0079D082 /* PresentationObjectForCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF2A31241FBCAF0079D082 /* PresentationObjectForCreation.swift */; };
 		52D5FF032409194E001B570B /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5FF022409194E001B570B /* MenuTableCell.swift */; };
+		52D8DCD724407C8C002EE386 /* SecurityInfoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DCD524407C8C002EE386 /* SecurityInfoList.xcdatamodeld */; };
+		52D8DCDA24407DFB002EE386 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DCD924407DFB002EE386 /* AuthenticationService.swift */; };
+		52D8DCDC24407E0A002EE386 /* AuthenticationServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DCDB24407E0A002EE386 /* AuthenticationServiceAssembly.swift */; };
+		52D8DCE02440A29C002EE386 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DCDF2440A29C002EE386 /* SignUpViewController.swift */; };
+		52D8DCE22440A2B1002EE386 /* SignUpViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D8DCE12440A2B1002EE386 /* SignUpViewControllerAssembly.swift */; };
+		52D8DCE42440A461002EE386 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D8DCE32440A461002EE386 /* SignUp.storyboard */; };
 		52E1FD7D243C831B00665845 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E1FD7C243C831B00665845 /* TopView.swift */; };
 		52EC04D12412673700D2C65A /* ContainerViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC04D02412673700D2C65A /* ContainerViewControllerAssembly.swift */; };
 		52EC04D324126AAA00D2C65A /* HomeViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EC04D224126AAA00D2C65A /* HomeViewControllerAssembly.swift */; };
@@ -112,8 +119,15 @@
 		527A5E302406DEEC004AB058 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		527A5E322406DFAB004AB058 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		527A5E342406DFC5004AB058 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		527B1DFD24422E5F00EB3BEF /* AttributeAddingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeAddingViewCell.swift; sourceTree = "<group>"; };
 		52CF2A31241FBCAF0079D082 /* PresentationObjectForCreation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationObjectForCreation.swift; sourceTree = "<group>"; };
 		52D5FF022409194E001B570B /* MenuTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableCell.swift; sourceTree = "<group>"; };
+		52D8DCD624407C8C002EE386 /* SecurityInfoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SecurityInfoList.xcdatamodel; sourceTree = "<group>"; };
+		52D8DCD924407DFB002EE386 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		52D8DCDB24407E0A002EE386 /* AuthenticationServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServiceAssembly.swift; sourceTree = "<group>"; };
+		52D8DCDF2440A29C002EE386 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		52D8DCE12440A2B1002EE386 /* SignUpViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerAssembly.swift; sourceTree = "<group>"; };
+		52D8DCE32440A461002EE386 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		52E1FD7C243C831B00665845 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		52EC04D02412673700D2C65A /* ContainerViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewControllerAssembly.swift; sourceTree = "<group>"; };
 		52EC04D224126AAA00D2C65A /* HomeViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerAssembly.swift; sourceTree = "<group>"; };
@@ -376,6 +390,8 @@
 		527A5E0B24066E61004AB058 /* AVSOFT */ = {
 			isa = PBXGroup;
 			children = (
+				52D8DCDD24408DCA002EE386 /* SignUpModule */,
+				52D8DCD824407DA2002EE386 /* AuthenticationService */,
 				5271008F242FDDBA00F04D5B /* LoginModule */,
 				5267AC53242A49920043BB6C /* ObjectsReviewModule */,
 				523A81122417C94E00430D04 /* ContainerModule */,
@@ -391,6 +407,7 @@
 				527A5E1524066E61004AB058 /* Assets.xcassets */,
 				527A5E1724066E61004AB058 /* LaunchScreen.storyboard */,
 				527A5E1A24066E61004AB058 /* Info.plist */,
+				52D8DCD524407C8C002EE386 /* SecurityInfoList.xcdatamodeld */,
 			);
 			path = AVSOFT;
 			sourceTree = "<group>";
@@ -402,6 +419,33 @@
 				527A5E2524066E61004AB058 /* Info.plist */,
 			);
 			path = AVSOFTTests;
+			sourceTree = "<group>";
+		};
+		52D8DCD824407DA2002EE386 /* AuthenticationService */ = {
+			isa = PBXGroup;
+			children = (
+				52D8DCD924407DFB002EE386 /* AuthenticationService.swift */,
+				52D8DCDB24407E0A002EE386 /* AuthenticationServiceAssembly.swift */,
+			);
+			path = AuthenticationService;
+			sourceTree = "<group>";
+		};
+		52D8DCDD24408DCA002EE386 /* SignUpModule */ = {
+			isa = PBXGroup;
+			children = (
+				52D8DCDE2440A260002EE386 /* Controller */,
+				52D8DCE32440A461002EE386 /* SignUp.storyboard */,
+			);
+			path = SignUpModule;
+			sourceTree = "<group>";
+		};
+		52D8DCDE2440A260002EE386 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52D8DCDF2440A29C002EE386 /* SignUpViewController.swift */,
+				52D8DCE12440A2B1002EE386 /* SignUpViewControllerAssembly.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		52EC04D7241281A600D2C65A /* ObjectCreationModule */ = {
@@ -428,6 +472,7 @@
 			children = (
 				52EC04DE2412874300D2C65A /* ObjectCreationViewController.swift */,
 				52042DF5241F8B4900945FD2 /* ObjectCreationViewCell.swift */,
+				527B1DFD24422E5F00EB3BEF /* AttributeAddingViewCell.swift */,
 				52EC04E02412876C00D2C65A /* ObjectCreationViewControllerAssembly.swift */,
 			);
 			path = Controller;
@@ -518,6 +563,7 @@
 				527A5E1624066E61004AB058 /* Assets.xcassets in Resources */,
 				527A5E1424066E61004AB058 /* Main.storyboard in Resources */,
 				5244479724314C6B00C991A3 /* ObjectsReview.storyboard in Resources */,
+				52D8DCE42440A461002EE386 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,11 +605,13 @@
 				52EC04D524126B1400D2C65A /* MenuViewControllerAssembly.swift in Sources */,
 				52710094242FDE1100F04D5B /* LoginViewControllerAssembly.swift in Sources */,
 				526FC06924312E4700CB93BD /* ObjectsReviewCell.swift in Sources */,
+				52D8DCD724407C8C002EE386 /* SecurityInfoList.xcdatamodeld in Sources */,
 				52D5FF032409194E001B570B /* MenuTableCell.swift in Sources */,
 				527A5E352406DFC5004AB058 /* MenuViewController.swift in Sources */,
 				527A5E0D24066E61004AB058 /* AppDelegate.swift in Sources */,
 				5234F3502411881000874EC9 /* PresentationObjectForList.swift in Sources */,
 				5234F3492411825B00874EC9 /* ObjectsListViewControllerAssembly.swift in Sources */,
+				52D8DCE22440A2B1002EE386 /* SignUpViewControllerAssembly.swift in Sources */,
 				522294172431EF7300EF1908 /* PresentationObjectsInformation.swift in Sources */,
 				52EC04D324126AAA00D2C65A /* HomeViewControllerAssembly.swift in Sources */,
 				527A5E332406DFAB004AB058 /* ContainerViewController.swift in Sources */,
@@ -576,9 +624,13 @@
 				5267AC5C242A4AA80043BB6C /* ObjectsReviewModel.swift in Sources */,
 				527A5E312406DEEC004AB058 /* HomeViewController.swift in Sources */,
 				522717F72420E08200DF1AAA /* ObjectEditingModelAssembly.swift in Sources */,
+				52D8DCE02440A29C002EE386 /* SignUpViewController.swift in Sources */,
 				5234F3472411823E00874EC9 /* ObjectsListViewController.swift in Sources */,
 				5234F35224118AB200874EC9 /* StorageObject.swift in Sources */,
+				527B1DFE24422E5F00EB3BEF /* AttributeAddingViewCell.swift in Sources */,
+				52D8DCDC24407E0A002EE386 /* AuthenticationServiceAssembly.swift in Sources */,
 				5234F34E2411846300874EC9 /* StorageAssembly.swift in Sources */,
+				52D8DCDA24407DFB002EE386 /* AuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,6 +897,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		52D8DCD524407C8C002EE386 /* SecurityInfoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				52D8DCD624407C8C002EE386 /* SecurityInfoList.xcdatamodel */,
+			);
+			currentVersion = 52D8DCD624407C8C002EE386 /* SecurityInfoList.xcdatamodel */;
+			path = SecurityInfoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 527A5E0124066E61004AB058 /* Project object */;
 }

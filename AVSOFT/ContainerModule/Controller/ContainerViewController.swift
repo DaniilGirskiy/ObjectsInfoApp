@@ -106,6 +106,10 @@ class ContainerViewController: UIViewController {
             router.showReview(in: self)
         case .programInformation:
             print("Show program information")
+            
+        case .logOut:
+            print("Log Out")
+            dismiss(animated: true, completion: nil)
         }
     }
     

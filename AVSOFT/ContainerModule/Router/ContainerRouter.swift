@@ -27,7 +27,7 @@ class ContainerRouterImpl: ContainerRouter {
     private lazy var objectsListViewControllerAssembly = ObjectsListViewControllerAssembly()
     private lazy var objectsReviewViewControllerAssembly = ObjectsReviewViewControllerAssembly()
     
-    func show(in vc: UIViewController) {
+    func show(in vc: UIViewController) { // убрать все кишки в ассембли
         let navController = UINavigationController(rootViewController: objectsListViewControllerAssembly.viewController)
         navController.navigationBar.tintColor = .black 
         navController.modalPresentationStyle = .fullScreen
